@@ -12,10 +12,10 @@ object Main {
     val connection = DriverManager.getConnection(url, username, password)
     try {
       // Create a table
-//      createTable(connection)
-//      createType(connection)
+      createTable(connection)
+      createType(connection)
       // Create a stored procedure
-//      createStoredProcedure(connection)
+      createStoredProcedure(connection)
 
       // Call the stored procedure
       callStoredProcedure(connection)
